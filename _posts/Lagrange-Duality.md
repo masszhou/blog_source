@@ -42,6 +42,8 @@ Finally, by solving the dual problem
 
 We can get a satisfying lower bound of the primal problem.
 
+<!-- more-->
+
 Here is a short proof about $g(\lambda)$ is the lower bound of primal problem.
 {%math%}
 \begin{align}
@@ -51,8 +53,6 @@ g(\lambda) &= \inf_{x\in \mathcal{D}} (\mathcal{L}(x, \lambda)) \\
 \end{align}
 {%endmath%}
 
-
-
 These are what we learned from text book, surely there are also deduction and proofing.
 
 However it's difficult for me to explain these to other people, when they keep asking why, because I didn't have a clear intuition about this standard procedure. For myself, the most agonizing questions were all about this dual problem. The algorithm is clear, but why we choose to solve the dual problem to estimate the lower bound of primal problem instead of solving primal problem directly. What is the intuition behind this dual problem?
@@ -60,8 +60,6 @@ However it's difficult for me to explain these to other people, when they keep a
 In the following sections, I will try to explain my intuitive understanding. At the same time I will try to avoid the mathematic proofs, which is beautiful and logically perfect but hard for mortal to speak.
 
 Be careful, all the examples in this blog are special cases, which are helpful to understand the intuition, but since they are special cases, their properties can not be simply generalized. If I made any mistakes, please notify me to correct, thank you.
-
-<!-- more-->
 
 ## 2. Why Lagrangian function
 
@@ -182,30 +180,34 @@ $$
 \min x^2 \quad s.t. x \leq 1
 $$
 
-we have
-{% math %}
-g(\lambda) = -f^{\star}(-\lambda^T A) - \lambda^T b \\
-= -f^{\star}(-\lambda) - \lambda
+we have the dual function as
+{%math%}
+\begin{align}
+g(\lambda) &= -f^{\star}(-\lambda^T A) - \lambda^T b \\
+&= -f^{\star}(-\lambda) - \lambda
+\end{align}
 {% endmath %}
 
-where
+here the conjugate function is
 {% math %}
 f^{\star}(\lambda)=\sup_x(\lambda x - f(x)) \\
 = \frac{1}{4} \lambda^2
 {% endmath %}
 
-to solve
-{% math %}
+The dual problem is defined as
+{%math%}
+\begin{equation}
 \max_{\lambda} g(\lambda) \\
 \text{dom } g = \{-\lambda \in \text{dom } f^{\star}, \lambda \geq 0\}
-{% endmath %}
+\end{equation}
+{%endmath%}
 
-when consider
+if we plug Eq.11 into Eq.12, we have dual problem like
 $$
-\max_\lambda -f^{\star}(-\lambda)
+\max_\lambda -f^{\star}(-\lambda)-\lambda
 $$
 
-it is equivalent to solve
+As we discussed before, $-\lambda$ is the linear term, the extreme value is only effected by its domain. Now let's consider the extreme of  $-f^{\star}(-\lambda)$. The problem is equivalent to solve
 
 $$
 \min_\lambda f^{\star}(-\lambda)
