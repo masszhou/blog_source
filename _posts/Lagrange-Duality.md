@@ -232,7 +232,11 @@ When our optimization problem has linear constrains, the dual function is simila
 
 ### Copyright
 
-© Zhiliang Zhou and https://masszhou.github.io, 2016. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Zhiliang Zhou and https://masszhou.github.io with appropriate and specific direction to the original content.
+© Zhiliang Zhou and https://masszhou.github.io, 2016.
+You are free repost them, but please repost them with source and author's information, i.e. me.
+Thanks :)
+If you find any mistakes in my blog, please notify me or correct me.
+Thanks a lot!:)
 
 [1]:https://www.dropbox.com/s/0qbij8ef1teu1sg/Screenshot%20from%202016-09-11%2016-18-41.png?dl=1
 [2]:https://www.dropbox.com/s/4v1q7bsmc0hn3hq/Screenshot%20from%202016-09-11%2019-05-41.png?dl=1
