@@ -4,7 +4,7 @@ date: 2016-09-30 14:07:30
 tags: probability theory
 ---
 
-## 1. An interesting quiz
+# An interesting quiz
 
 From the ML course (by Prof. Isbell and Prof. Littman) in Udacity, I found this quiz is quite an good example to understand Bayes inference. Hence I post my solution and understanding here as an archive. If I made any mistake here, please tell me, that will be very grateful.
 
@@ -23,10 +23,10 @@ $$
 
 Before we begin to solve this quiz, let's first have a short review about important tools in Bayes inference
 
-## 2. Tools we have
+# Tools we have
 >Joint probability is the ultimate cheat card. We can answer anything once we know the joint probability.
 
-#### 2.1 Marginalizing
+## Marginalizing
 {%math%}
 \begin{equation*}
 \Pr(X)=\sum_Y \Pr(X, Y) \tag{1} \label{1}
@@ -37,7 +37,7 @@ Below is an example from Wikipedia
 
 <img src="https://www.dropbox.com/s/jchhwswtmgrf25y/Screen%20Shot%202016-09-30%20at%2014.53.34.png?dl=1" alt="Drawing" style="height: 250px;"/>
 
-#### 2.2 Chain rule
+## Chain rule
 {%math%}
 \begin{equation*}
 \Pr(A,B) = \Pr(A \mid B)\Pr(B) = \Pr(B \mid A)\Pr(A) \tag{2} \\
@@ -57,11 +57,11 @@ for conditional probability
 {%endmath%}
 
 
-## 3. The quiz
+# The quiz
 
 We have two ways to solve this problem. One is using the exactly tools we have to deduct the results, no matter the concrete problem is. Another is analyzing the problem with intuition.
 
-#### 3.1 Deduction with formula
+## Deduction with formula
 
 {%math%}
 \begin{align*}

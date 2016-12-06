@@ -4,7 +4,7 @@ date: 2016-09-10 02:27:23
 tags: optimization
 ---
 
-## 1. Mysterious "dual"
+# Mysterious "dual"
 Suppose we are going to solve the optimization problem
 {%math%}
 \begin{equation}
@@ -61,7 +61,7 @@ In the following sections, I will try to explain my intuitive understanding. At 
 
 Be careful, all the examples in this blog are special cases, which are helpful to understand the intuition, but since they are special cases, their properties can not be simply generalized. If I made any mistakes, please notify me to correct, thank you.
 
-## 2. Why Lagrangian function
+## Why Lagrangian function
 
 > Why we need to cnstruct this Lagrangian function ?
 
@@ -112,7 +112,7 @@ The red curve represents the dual function $g(\lambda)$. It is easily to find ou
 
 This example and figure give us a simple intuition about how the optimization works. But are there any other reasons, that we prefer to find the lower bound by solving its dual problem?
 
-## 3. Why dual problem
+## Why dual problem
 
 >Why we choose to solve the dual problem to estimate the lower bound? is it easier to solve?
 
@@ -128,11 +128,11 @@ From Eq.(3), we know $-g(\lambda)$ is pointwise supremum of a set of affine func
 
 Fig.2 shows a set of affine functions, the red lines stands for the pointwise supremum. It is obvious that in this figure the red line function is a convex function. We know for convex function and set, it's easy to solve the global extreme. No matter $f(x)$ is convex or not, its dual function is concave, which is a convenient property.
 
-## 4. Connection with conjugate function
+# Connection with conjugate function
 
 When the constrains in Eq.(1) are linear, the dual function looks often similar to the conjugate function. In the following parts, I will try explain the connection between conjugate function and lagrange dual functions with my intuitive understanding.
 
-#### Conjugate function
+## Conjugate function
 
 The conjugate function of $f(x)$ is defined as
 {%math%}
@@ -155,7 +155,7 @@ Another intuitive thinking is, if f(x) is "nicely" convex, when conjugate functi
 
 So conjugate function $f^{\star}(\lambda)$ is a function about tangent lines, which approximate of $f(x)$ with tangent lines. Conjugate function is another view of f(x).
 
-#### When constrains are linear
+## When constrains are linear
 
 When constrains are linear, our optimization problem looks like
 $$
@@ -224,13 +224,13 @@ Now lets go back to our questions, conjugate function is another way to describe
 
 When our optimization problem has linear constrains, the dual function is similar to the form of conjugate function, intuitively solve the dual problem is more likely to search the support tangent line on the extreme point.
 
-### References
+# References
 
 1. "Convex Optimization", [The Book][5], you can find every thing you need
 2. A helpful discuss [thread][3]
 3. [Proof][6] about conjugate function's properties, in chinese
 
-### Copyright
+# Copyright
 
 © Zhiliang Zhou and https://masszhou.github.io, 2016.
 You are free repost them, but please repost them with source and author's information, i.e. me.
