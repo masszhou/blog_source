@@ -1,7 +1,7 @@
 ---
 title: Intuition behind Lagrange Duality
 date: 2016-09-10 02:27:23
-tags: optimization
+tags: fundamental math
 ---
 
 {% centerquote %}We all knew what to do, but don't ask me why. Or you insist?{% endcenterquote %}
