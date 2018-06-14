@@ -38,3 +38,59 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/deployment.html)
+
+## math
+
+Simple inline $a = b + c$.
+
+between lines
+
+$$f(x)=ax+b$$
+
+$$f(x) = a_1x^n + a_2x^{n-1} + a_3x^{n-2}$$
+
+matrix
+
+$$\left[
+\begin{matrix}
+V_A \\\\
+V_B \\\\
+V_C \\\\
+\end{matrix}
+\right] =
+\left[
+\begin{matrix}
+1 & 0 & L \\\\
+-cosψ & sinψ & L \\\\
+-cosψ & -sinψ & L
+\end{matrix}
+\right]
+\left[
+\begin{matrix}
+V_x \\\\
+V_y \\\\
+W \\\\
+\end{matrix}
+\right] $$
+
+block
+
+$$\frac{\partial u}{\partial t}
+= h^2 \left( \frac{\partial^2 u}{\partial x^2} +
+\frac{\partial^2 u}{\partial y^2} +
+\frac{\partial^2 u}{\partial z^2}\right)$$
+
+tag
+
+{% math %}\frac{|ax + by + c|}{\sqrt{a^{2}+b^{2}}} {% endmath %}
+
+multiple line
+
+{% math %}
+\begin{aligned}
+\dot{x} & = \sigma(y-x) \\
+\dot{y} & = \rho x - y - xz \\
+\dot{z} & = -\beta z + xy
+\end{aligned}
+{% endmath %}
+
