@@ -4,6 +4,8 @@ date: 2016-09-10 02:27:23
 tags: optimization
 ---
 
+{% centerquote %}We all knew what to do, but don't ask me why. Or you insist?{% endcenterquote %}
+
 # Mysterious "dual"
 Suppose we are going to solve the optimization problem
 {%math%}
@@ -13,6 +15,8 @@ s.t. \space h_i(x) \leq 0, \space i=1 \ldots m \\
 \mathcal{D}=\text{dom }f\cap \bigcap_{i=1}^{m}\text{dom }h_i
 \end{equation}
 {%endmath%}
+
+<!-- more-->
 
 *note, the equation constrains can be represented by two inequation constrains. To simplify our problem, here we use only inequation constrains. Besides, all the functions we discussed in this blog are nicely functions, they are always continuous and derivable, as whatever you need.*
 
@@ -41,8 +45,6 @@ Finally, by solving the dual problem
 {%endmath%}
 
 We can get a satisfying lower bound of the primal problem.
-
-<!-- more-->
 
 Here is a short proof about $g(\lambda)$ is the lower bound of primal problem.
 {%math%}

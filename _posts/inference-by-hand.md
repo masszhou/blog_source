@@ -1,12 +1,14 @@
 ---
-title: Bayes inference by hand
+title: Bayes Inference by Hand
 date: 2016-09-30 14:07:30
 tags: probability theory
 ---
 
+{% centerquote %}Too much information every day, I have to backup some sections of my brain here.{% endcenterquote %}
+
 # An interesting quiz
 
-From the ML course (by Prof. Isbell and Prof. Littman) in Udacity, I found this quiz is quite an good example to understand Bayes inference. Hence I post my solution and understanding here as an archive. If I made any mistake here, please tell me, that will be very grateful.
+In a course by Prof. Isbell and Prof. Littman, I found a quiz as quite an good example to understand Bayes inference. Hence I post my deduction here as an archive.
 
 The quiz is, there are two black boxes. In box 1 there are 3 green balls and 1 orange ball. In box 2 there are 3 blue balls and 2 green balls. The question is, when we randomly picked balls from one unknown box, we noticed that the first ball is green, what is the probability that the second picked ball is blue. Note, here $Pr(box=1)=Pr(box=2)=0.5$ is given.
 
@@ -23,7 +25,7 @@ $$
 
 Before we begin to solve this quiz, let's first have a short review about important tools in Bayes inference
 
-# Tools we have
+# Toolchains
 >Joint probability is the ultimate cheat card. We can answer anything once we know the joint probability.
 
 ## Marginalizing
